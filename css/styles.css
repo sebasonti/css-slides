@@ -1,0 +1,50 @@
+.logo {
+    height: 100px;
+}
+
+.slide-img {
+    height: 50vmin;
+    width: 80vmin;
+}
+
+p {
+    font-size: 3rem;
+}
+
+code {
+    white-space: pre;
+}
+
+.code {
+    background-color: #1111;
+    padding: 1rem;
+}
+
+.code p,
+.code code {
+    background-color: transparent;
+}
+
+.link {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: fit-content;
+    color: green;
+}
+
+.link:hover {
+    color: red;
+    background-color: greenyellow;
+}
+
+.link:active {
+    color: grey;
+    background-color: initial;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+}
