@@ -3,12 +3,18 @@
 }
 
 .slide-img {
-    height: 50vmin;
+    height: 40vmin;
     width: 80vmin;
 }
 
 p {
     font-size: 3rem;
+}
+
+@media screen and (max-width: 1400px) {
+    p {
+        font-size: 2.25rem;
+    }
 }
 
 code {

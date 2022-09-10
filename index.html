@@ -1,524 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- CSS Base -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="all"
-            href="css/webslides.css"
-        />
-        <!-- CSS SVG Icons (Font Awesome) -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="all"
-            href="css/svg-icons.css"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="js/webslides.min.js" defer></script>
-        <script src="js/app.js" defer></script>
-        <title>Bases de CSS</title>
-    </head>
-    <body>
-        <main role="main">
-            <article id="webslides">
-                <section class="bg-black-blue aligncenter">
-                    <div class="wrap">
-                        <h1 class="text-landing">Bases de CSS</h1>
-                        <p class="text-symbols">* * *</p>
-                        <p class="text-subtitle">
-                            Juan Sebastian Ontiveros Gonzales <br />
-                            Septiembre - 2022
-                        </p>
-                    </div>
-                </section>
-                <section>
-                    <div class="wrap">
-                        <h2>Con el Apoyo de</h2>
-                        <ul class="flexblock gallery">
-                            <li>
-                                <a href="#" title="Club Chicas Programadoras">
-                                    <figure>
-                                        <img
-                                            class="logo"
-                                            src="images/logo_ccp.png"
-                                            alt="Club Chicas Programadoras"
-                                        />
-                                        <figcaption>
-                                            <h3>Club Chicas Programadoras</h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Nos Gusta la Ciencia">
-                                    <figure>
-                                        <img
-                                            class="logo"
-                                            src="images/logo_nos_gusta_la_ciencia.jpeg"
-                                            alt="Nos Gusta la Ciencia"
-                                        />
-                                        <figcaption>
-                                            <h3>Nos Gusta la Ciencia</h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    title="Google Developer Student Clubs"
-                                >
-                                    <figure>
-                                        <img
-                                            class="logo"
-                                            src="images/logo_gdsc_1.png"
-                                            alt="Google Developer Student Clubs"
-                                        />
-                                        <figcaption>
-                                            <h3>
-                                                Google Developer Student Clubs
-                                            </h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Embajada de Suecia">
-                                    <figure>
-                                        <img
-                                            class="logo"
-                                            src="images/logo_embajada_de_suecia.jpg"
-                                            alt="Embajada de Suecia"
-                                        />
-                                        <figcaption>
-                                            <h3>Embajada de Suecia</h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                              </li>
-                            <li>
-                                <a href="#" title="World Wildfire Fund">
-                                    <figure>
-                                        <img
-                                            class="logo"
-                                            src="images/logo_wwf.jpeg"
-                                            alt="World Wildfire Fund"
-                                        />
-                                        <figcaption>
-                                            <h3>World Wildfire Fund</h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </section>
-                <section class="aligncenter">
-                  <div class="wrap">
-                    <h2><strong>Contenido</strong></h2>
-                    <ul class="flexblock border">
-                      <li>
-                        <div>
-                          <ol>
-                            <li><a href="#slide=4">¿Qué es CSS?</a></li>
-                            <li><a href="#slide=5">Sintaxis de CSS</a></li>
-                            <li><a href="#slide=6">CSS inline</a></li>
-                            <li><a href="#slide=7">CSS interno</a></li>
-                            <li><a href="#slide=8">CSS externo</a></li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <ol>
-                            <li><a href="#slide=9">Selectores CSS</a></li>
-                            <li><a href="#slide=12">Tipos de unidades</a></li>
-                            <li><a href="#slide=16">Modelo de Caja</a></li>
-                            <li><a href="#slide=17">Dimensiones</a></li>
-                            <li><a href="#slide=18">Manejo de colores</a></li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <ol>
-                            <li><a href="#slide=20">Color del contenido</a></li>
-                            <li><a href="#slide=21">Color del fondo</a></li>
-                            <li><a href="#slide=22">Manejo de fuente</a></li>
-                            <li><a href="#slide=23">Bordes</a></li>
-                            <li><a href="#slide=23">Quiz</a></li>
-                          </ol>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>¿Qué es CSS?</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Cascading Style Sheets (Hojas de estilo en cascada)</p>
-                        <p>HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente</p>
-                        <p>cambiar la fuente, el color, el tamaño y el espaciado del contenido, para formar multiples columnas, añadir animaciones y otros elementos decorativos.</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Sintaxis de CSS</strong></h2>
-                      </div>
-                      <div class="column">
-                        <div class="slide-img">
-                          <img src="images/sintaxis.gif" alt="Sintaxis CSS">
-                        </div>
-                        <p>La <strong>propiedad</strong> es un identificador, un nombre leíble por humanos, que define qué característica es considerada.</p>
-                        <p>El <strong>valor</strong> describe como las características deben ser manejadas por el motor. Cada propiedad tiene un conjunto de valores válidos</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>CSS inline</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>El CSS inline se utiliza para dar estilo a un elemento HTML específico.</p>
-                        <div class="code">
-                          <p><code>&lt;h1 style="padding:30px;"&gt;Club Chicas Programadoras&lt;/h1&gt;</code></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>CSS interno</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>El CSS interno o incrustado requiere que añadas la etiqueta <code>&lt;style&gt;</code> en la sección <code>&lt;head&gt;</code> de tu documento HTML.</p>
-                        <div class="code">
-                          <p><code>&lt;style type="text/css"&gt;</code></p>
-                          <p><code>body {</code></p>
-                          <p><code>    background-color: blue;</code></p>
-                          <p><code>}</code></p>
-                          <p><code>&lt;/style&gt;</code></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>CSS externo</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Con el CSS externo, enlazarás tus páginas web a un archivo .css externo, que puede ser creado con cualquier editor de texto de tu dispositivo</p>
-                        <div class="code">
-                          <p><code>body {</code></p>
-                          <p><code>    background-color: rebeccapurple;</code></p>
-                          <p><code>}</code></p>
-                        </div>
-                        <br>
-                        <p>En la sección <code>&lt;head&gt;</code> de tu documento HTML, añade una referencia a tu archivo .css externo justo después de la etiqueta <code>&lt;title&gt;</code></p>
-                        <div class="code">
-                          <p><code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Selectores CSS</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3>Básicos</h3>
-                        <p>Los selectores en CSS definen qué elementos serán afectados por las reglas de CSS.</p>
-                        <p><code>*</code> - Universal: Selecciona todos los elementos</p>
-                        <p><code>div</code> - De tipo: Selecciona todos los elementos de ese tipo</p>
-                        <p><code>.main-title</code> - Clase: Selecciona elementos que tengan esa clase</p>
-                        <p><code>#username</code> - Id: Selecciona elementos que tengan ese id (debería ser único)</p>
-                        <h3>Agrupados</h3>
-                        <p><code>h1, h2, h3</code> - Selecciona todos los elementos que cumplan los selectores separados por comas</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Selectores CSS</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3>Combinados</h3>
-                        <p><code>div a</code> - Descendiente: Selecciona elementos que son descendientes del primer elemento (todos los a dentro de un div)</p>
-                        <p><code>div &gt; a</code> - Hijo directo: Selecciona elementos que son hijos directos del primer elemento</p>
-                        <p><code>div ~ a</code> - Hermanos siguientes: Selecciona elementos que son hermanos del primer elemento y que aparecen después</p>
-                        <p><code>div + a</code> - Hermano adyacente: Selecciona el primer elemento que es hermano del primer elemento y que aparece después</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Selectores CSS</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3>Atributos</h3>
-                        <p><code>[atributo]</code> - Tiene: Selecciona elementos que tienen ese atributo</p>
-                        <p><code>[atributo="valor"]</code> - Igual: Selecciona elementos que tienen ese atributo con exactamente ese valor</p>
-                        <p><code>[atributo^="valor"]</code> - Comienza con: Selecciona elementos que tienen ese atributo y comienza con ese valor</p>
-                        <p><code>[atributo$="valor"]</code> - Termina con: Selecciona elementos que tienen ese atributo y termina con ese valor</p>
-                        <p><code>[atributo*="valor"]</code> - Contiene: Selecciona elementos que tienen ese atributo y contiene ese valor</p></p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Tipos de unidades</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3><strong>Unidades absolutas</strong></h3>
-                        <p>La más utilizada es el pixel: 1px</p>
-                        <h3><strong>Unidades relativas</strong></h3>
-                        <p>Las unidades relativas dependen de algún otro factor (resolución, tamaño de letra, etc...).</p>
-                        <p>em: Tamaño de fuente en el contexto</p>
-                        <p>rem: Tamaño de fuente en la raíz</p>
-                        <p>%: Relativo al elemento padre</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Tipos de unidades</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3><strong>Ejemplo</strong></h3>
-                        <img src="images/unidades-relativas-em.png" alt="Unidades Relativas">
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Tipos de unidades</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3><strong>Ejemplo</strong></h3>
-                        <div class="code">
-                          <p><code>:root {</code><br>
-                          <code>    font-size: 22px;    /* Tamaño base */</code><br>
-                          <code>}</code><br>
-                          <br>
-                          <code>h1 {</code><br>
-                          <code>    font-size: 2rem;    /* El doble del tamaño base: 44px */</code><br>
-                          <code>}</code><br>
-                          <br>
-                          <code>h2 {</code><br>
-                          <code>    font-size: 1rem;    /* El mismo tamaño base: 22px */</code><br>
-                          <code>}</code></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Tipos de unidades</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3><strong>Unidades flexibles</strong></h3>
-                        <p>Con estas unidades podemos hacer referencia a un porcentaje concreto del tamaño específico que tengamos en la ventana del navegador, independientemente de si es redimensionado o no.</p>
-                        <p>vw: 1vw = 1% del ancho del navegador</p>
-                        <p>vh: 1vh = 1% del alto del navegador</p>
-                        <p>vmin: 1vmin = 1% del ancho o el alto del navegador, el que sea menor</p>
-                        <p>vmax: 1vmax = 1% del ancho o el alto del navegador, el que sea mayor</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Modelo de Caja</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Cuando hablamos del modelo de cajas en CSS, estamos haciendo referencia a un sistema que tiene el navegador de graficar los elemento HTML como cajas.</p>
-                        <div class="slide-img">
-                          <img src="images/Box-Model.png" alt="Box Model">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Dimensiones</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Las propiedades que modifican las dimensiones de un elemento son:</p>
-                        <p><code>height</code>: modifica la altura del elemento</p>
-                        <p><code>width</code>: modifica el ancho del elemento</p>
-                        <p><code>margin</code>: es un abreviado de margin-top margin-right margin-bottom margin-left</p>
-                        <p><code>padding</code>: es un abreviado de padding-top padding-right padding-bottom padding-left</p>
-                        <p>Como buena práctica se recomienda configurar la propiedad <code>box-sizing: border-box;</code> para que las propiedades <code>height</code> y <code>width</code> coincidan con la suma del contenido, el padding y el borde.</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Manejo de Colores</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Los colores pueden ser declarados de distintas maneras.</p>
-                        <h3><strong>Palabras clase</strong></h3>
-                        <p>Nombres de colores son reconocidos por CSS, como ser: red, yellow, blue, tomato, salmon, beige</p>
-                        <h3><strong>rgb: Red Green Blue</strong></h3>
-                        <p>Existe una función en CSS que permite definir un color por sus valor Red-Green-Blue, que van del 0 al 255. Por ejemplo, un gris sería <code>rgb(100, 100, 100)</code></p>
-                        <p>Hay una variación de la función rgb que incluye un parámetro que permite definir un grado de transparencia: <code>rgba(100, 100, 100, 50%)</code> - gris transparente al 50%</p>
-                        <h3><strong>Hexadecimal</strong></h3>
-                        <p>Los valores RGB, expresados en números decimales, también puede ser expresado en número hexadecimales de esta manera: <code>#4ac1d2</code>, son dos dígitos para R, dos para G y dos para B</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Manejo de Colores</strong></h2>
-                      </div>
-                      <div class="column">
-                        <h3><strong>hsl: Hue Saturation Lightness</strong></h3>
-                        <p>Es otra función el CSS que recibe otros parámetros.</p>
-                        <p>Hue: Es el grado de 0 a 360 del círculo de colores. 0 es rojo, 120 es verde y 240 es azul</p>
-                        <p>Saturation: es el porcentaje de saturación en una escala de grises, 0% es gris y 100% es el color puro</p>
-                        <p>Lightness: es el porcentaje de brillo, 0% es negro total, 100% es blanco y 50% es el color puro</p>
-                        <p>Ejemplo: <code>hsl(240, 100%, 50%)</code> - azul</p>
-                        <p><a target="_blank" href="https://www.w3schools.com/colors/colors_hsl.asp">hsl Calculator</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Color del contenido</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>La propiedad CSS que modifica el color del contenido, es decir, de los texto es <code style="color: rebeccapurple">color</code></p>
-                        <p>La palabra clave <code>currentcolor</code> que toma el valor de la propiedad <code>color</code> y puede ser utilizada en otras propiedades.</p>
-                        <a class="link" target="_blank" href="https://www.google.com">Enlace</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Color del fondo</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>La propiedad CSS que modifica el color del fondo de un elemento es <code style="background-color: rebeccapurple; color: white;">background-color</code></p>
-                        <div class="box"></div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Manejo de fuente</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>La propiedad <code>font</code> es una abreviación de muchas propiedades que modifican la fuente de texto.</p>
-                        <p><code>font-size</code> (obligatorio): Define la altura del texto.</p>
-                        <p><code>font-style</code>: Define si el texto debe ser <span style="font-style: normal;">normal</span>, <span style="font-style: italic;">italic</span>, <span style="font-style: oblique;">oblique</span> según la familia de fuente</p>
-                        <p><code>font-weight</code>: Define el grosor de los trazos del texto, según la familia fuente; como normal, <span style="font-weight: bold;">bold</span>.</p>
-                        <p><code>font-stretch</code>: Define el grado de anchos y separaciones entre letras del texto, como normal, <span style="font-stretch: condensed;">condensed</span> o <span style="font-stretch: expanded;">expanded</span></p>
-                        <p><code>line-height</code>: Define la altura de las lineas de un text, es decir, la separación entre ellas</p>
-                        <p><code>font-family</code> (obligatorio): Define la familia de la fuente. Un buen repositorio de fuentes es <a target="_blank" href="https://fonts.google.com/">Google Fonts</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Bordes</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p>Los bordes de los elementos están definidos por la propiedad <code>border</code>.</p>
-                        <p><code>border</code> es una abreviación de:</p>
-                        <p><code>border-color</code>: El color del borde</p>
-                        <p><code>border-style</code>: El estilo del border, que puede ser: dotted, dashed, solid, double, etc</p>
-                        <p><code>border-color</code>: Define el color del borde</p>
-                        <p>Cada una de las propiedades mencionadas son a su vez abreviaciones de las propiedades correspondiendes a top, right, bottom y left.</p>
-                        <p><code>border-radius</code>: Modifica las esquinas de un elemento de forma redondeada. Es una abreviación de top-left, top-right, bottom-right, bottom-left.</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="aligntop">
-                  <div class="wrap">
-                    <div class="grid sm">
-                      <div class="title column">
-                        <h2><strong>Quiz</strong></h2>
-                      </div>
-                      <div class="column">
-                        <p><a target="_blank" href="https://forms.gle/WPevRck73fhoGeE37">https://forms.gle/WPevRck73fhoGeE37</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="bg-black-blue aligncenter">
-                  <div class="wrap">
-                    <h2><strong>Preguntas</strong></h2>
-                  </div>
-                </section>
-            </article>
-        </main>
-    </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS Base -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/webslides.css" />
+  <!-- CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/webslides.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <title>Bases de CSS</title>
+</head>
+
+<body>
+  <main role="main">
+    <article id="webslides">
+      <section class="bg-black-blue aligncenter">
+        <div class="wrap">
+          <h1 class="text-landing">Bases de CSS</h1>
+          <p class="text-symbols">* * *</p>
+          <p class="text-subtitle">
+            Juan Sebastian Ontiveros Gonzales <br />
+            Septiembre - 2022
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2>Con el Apoyo de</h2>
+          <ul class="flexblock gallery">
+            <li>
+              <a href="#" title="Club Chicas Programadoras">
+                <figure>
+                  <img class="logo" src="images/logo_ccp.png" alt="Club Chicas Programadoras" />
+                  <figcaption>
+                    <h3>Club Chicas Programadoras</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Nos Gusta la Ciencia">
+                <figure>
+                  <img class="logo" src="images/logo_nos_gusta_la_ciencia.jpeg" alt="Nos Gusta la Ciencia" />
+                  <figcaption>
+                    <h3>Nos Gusta la Ciencia</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Google Developer Student Clubs">
+                <figure>
+                  <img class="logo" src="images/logo_gdsc_1.png" alt="Google Developer Student Clubs" />
+                  <figcaption>
+                    <h3>
+                      Google Developer Student Clubs
+                    </h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Embajada de Suecia">
+                <figure>
+                  <img class="logo" src="images/logo_embajada_de_suecia.jpg" alt="Embajada de Suecia" />
+                  <figcaption>
+                    <h3>Embajada de Suecia</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="World Wildfire Fund">
+                <figure>
+                  <img class="logo" src="images/logo_wwf.jpeg" alt="World Wildfire Fund" />
+                  <figcaption>
+                    <h3>World Wildfire Fund</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+        </div>
+        </div>
+      </section>
+      <section class="aligncenter">
+        <div class="wrap">
+          <h2><strong>Contenido</strong></h2>
+          <ul class="flexblock border">
+            <li>
+              <div>
+                <ol>
+                  <li><a href="#slide=4">¿Qué es CSS?</a></li>
+                  <li><a href="#slide=5">Sintaxis de CSS</a></li>
+                  <li><a href="#slide=6">CSS inline</a></li>
+                  <li><a href="#slide=7">CSS interno</a></li>
+                  <li><a href="#slide=8">CSS externo</a></li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div>
+                <ol>
+                  <li><a href="#slide=9">Selectores CSS</a></li>
+                  <li><a href="#slide=12">Tipos de unidades</a></li>
+                  <li><a href="#slide=16">Modelo de Caja</a></li>
+                  <li><a href="#slide=17">Dimensiones</a></li>
+                  <li><a href="#slide=18">Manejo de colores</a></li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div>
+                <ol>
+                  <li><a href="#slide=20">Color del contenido</a></li>
+                  <li><a href="#slide=21">Color del fondo</a></li>
+                  <li><a href="#slide=22">Manejo de fuente</a></li>
+                  <li><a href="#slide=23">Bordes</a></li>
+                  <li><a href="#slide=23">Quiz</a></li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>¿Qué es CSS?</strong></h2>
+            </div>
+            <div class="column">
+              <p>Cascading Style Sheets (Hojas de estilo en cascada)</p>
+              <p>HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y
+                posicionarlo visualmente</p>
+              <p>cambiar la fuente, el color, el tamaño y el espaciado del contenido, para formar multiples columnas,
+                añadir animaciones y otros elementos decorativos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Sintaxis de CSS</strong></h2>
+            </div>
+            <div class="column">
+              <div class="slide-img">
+                <img src="images/sintaxis.png" alt="Sintaxis CSS">
+              </div>
+              <p>La <strong>propiedad</strong> es un identificador, un nombre leíble por humanos, que define qué
+                característica es considerada.<br>
+                El <strong>valor</strong> describe como las características deben ser manejadas por el motor. Cada
+                propiedad tiene un conjunto de valores válidos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>CSS inline</strong></h2>
+            </div>
+            <div class="column">
+              <p>El CSS inline se utiliza para dar estilo a un elemento HTML específico.</p>
+              <div class="code">
+                <p><code>&lt;h1 style="padding:30px;"&gt;Club Chicas Programadoras&lt;/h1&gt;</code></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>CSS interno</strong></h2>
+            </div>
+            <div class="column">
+              <p>El CSS interno o incrustado requiere que añadas la etiqueta <code>&lt;style&gt;</code> en la sección
+                <code>&lt;head&gt;</code> de tu documento HTML.
+              </p>
+              <div class="code">
+                <p><code>&lt;style type="text/css"&gt;</code><br>
+                  <code>body {</code><br>
+                  <code>    background-color: blue;</code><br>
+                  <code>}</code><br>
+                  <code>&lt;/style&gt;</code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>CSS externo</strong></h2>
+            </div>
+            <div class="column">
+              <p>Con el CSS externo, enlazarás tus páginas web a un archivo .css externo, que puede ser creado con
+                cualquier editor de texto de tu dispositivo</p>
+              <div class="code">
+                <p><code>body {</code><br>
+                  <code>    background-color: rebeccapurple;</code><br>
+                  <code>}</code>
+                </p>
+              </div>
+              <br>
+              <p>En la sección <code>&lt;head&gt;</code> de tu documento HTML, añade una referencia a tu archivo .css
+                externo justo después de la etiqueta <code>&lt;title&gt;</code></p>
+              <div class="code">
+                <p><code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Selectores CSS</strong></h2>
+            </div>
+            <div class="column">
+              <h3>Básicos</h3>
+              <p>Los selectores en CSS definen qué elementos serán afectados por las reglas de CSS.</p>
+              <p><code>*</code> - Universal: Selecciona todos los elementos<br>
+                <code>div</code> - De tipo: Selecciona todos los elementos de ese tipo<br>
+                <code>.main-title</code> - Clase: Selecciona elementos que tengan esa clase<br>
+                <code>#username</code> - Id: Selecciona elementos que tengan ese id (debería ser único)
+              </p>
+              <h3>Agrupados</h3>
+              <p><code>h1, h2, h3</code> - Selecciona todos los elementos que cumplan los selectores separados por comas
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Selectores CSS</strong></h2>
+            </div>
+            <div class="column">
+              <h3>Combinados</h3>
+              <p><code>div a</code> - Descendiente: Selecciona elementos que son descendientes del primer elemento
+                (todos los a dentro de un div)<br>
+                <code>div &gt; a</code> - Hijo directo: Selecciona elementos que son hijos directos del primer elemento
+                <br>
+                <code>div ~ a</code> - Hermanos siguientes: Selecciona elementos que son hermanos del primer elemento y
+                que aparecen después<br>
+                <code>div + a</code> - Hermano adyacente: Selecciona el primer elemento que es hermano del primer
+                elemento y que aparece después
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Selectores CSS</strong></h2>
+            </div>
+            <div class="column">
+              <h3>Atributos</h3>
+              <p><code>[atributo]</code> - Tiene: Selecciona elementos que tienen ese atributo<br>
+                <code>[atributo="valor"]</code> - Igual: Selecciona elementos que tienen ese atributo con exactamente
+                ese valor<br>
+                <code>[atributo^="valor"]</code> - Comienza con: Selecciona elementos que tienen ese atributo y
+                comienza con ese valor<br>
+                <code>[atributo$="valor"]</code> - Termina con: Selecciona elementos que tienen ese atributo y termina
+                con ese valor<br>
+                <code>[atributo*="valor"]</code> - Contiene: Selecciona elementos que tienen ese atributo y contiene
+                ese valor
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Tipos de unidades</strong></h2>
+            </div>
+            <div class="column">
+              <h3><strong>Unidades absolutas</strong></h3>
+              <p>La más utilizada es el pixel: 1px</p>
+              <h3><strong>Unidades relativas</strong></h3>
+              <p>Las unidades relativas dependen de algún otro factor (resolución, tamaño de letra, etc...).</p>
+              <p>em: Tamaño de fuente en el contexto<br>
+                rem: Tamaño de fuente en la raíz<br>
+                %: Relativo al elemento padre</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Tipos de unidades</strong></h2>
+            </div>
+            <div class="column">
+              <h3><strong>Ejemplos</strong></h3>
+              <img src="images/unidades-relativas-em.png" alt="Unidades Relativas">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Tipos de unidades</strong></h2>
+            </div>
+            <div class="column">
+              <div class="code">
+                <p><code>:root {</code><br>
+                  <code>    font-size: 22px;    /* Tamaño base */</code><br>
+                  <code>}</code><br>
+                  <br>
+                  <code>h1 {</code><br>
+                  <code>    font-size: 2rem;    /* El doble del tamaño base: 44px */</code><br>
+                  <code>}</code><br>
+                  <br>
+                  <code>h2 {</code><br>
+                  <code>    font-size: 1rem;    /* El mismo tamaño base: 22px */</code><br>
+                  <code>}</code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Tipos de unidades</strong></h2>
+            </div>
+            <div class="column">
+              <h3><strong>Unidades flexibles</strong></h3>
+              <p>Con estas unidades podemos hacer referencia a un porcentaje concreto del tamaño específico que tengamos
+                en la ventana del navegador, independientemente de si es redimensionado o no.</p>
+              <p>vw: 1vw = 1% del ancho del navegador<br>
+                vh: 1vh = 1% del alto del navegador<br>
+                vmin: 1vmin = 1% del ancho o el alto del navegador, el que sea menor<br>
+                vmax: 1vmax = 1% del ancho o el alto del navegador, el que sea mayor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Modelo de Caja</strong></h2>
+            </div>
+            <div class="column">
+              <p>Cuando hablamos del modelo de cajas en CSS, estamos haciendo referencia a un sistema que tiene el
+                navegador de graficar los elemento HTML como cajas.</p>
+              <div class="slide-img">
+                <img src="images/Box-Model.png" alt="Box Model">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Dimensiones</strong></h2>
+            </div>
+            <div class="column">
+              <p>Las propiedades que modifican las dimensiones de un elemento son:</p>
+              <p><code>height</code>: modifica la altura del elemento<br>
+                <code>width</code>: modifica el ancho del elemento<br>
+                <code>margin</code>: es un abreviado de margin-top margin-right margin-bottom margin-left<br>
+                <code>padding</code>: es un abreviado de padding-top padding-right padding-bottom padding-left
+              </p>
+              <p>Como buena práctica se recomienda configurar la propiedad <code>box-sizing: border-box;</code> para que
+                las propiedades <code>height</code> y <code>width</code> coincidan con la suma del contenido, el padding
+                y el borde.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Manejo de Colores</strong></h2>
+            </div>
+            <div class="column">
+              <p><strong>Palabras clave:</strong> Nombres de colores son reconocidos por CSS, como ser: red, yellow,
+                blue, tomato, salmon, beige</p>
+              <p><strong>Red Green Blue:</strong> Existe una función en CSS que permite definir un color por sus valor
+                Red-Green-Blue, que van del 0 al
+                255. Por ejemplo, un gris sería <code>rgb(100, 100, 100)</code><br>
+                Hay una variación de la función rgb que incluye un parámetro que permite definir un grado de
+                transparencia: <code>rgba(100, 100, 100, 50%)</code> - gris transparente al 50%</p>
+              <p><strong>Hexadecimal:</strong> Los valores RGB, expresados en números decimales, también puede ser
+                expresado en número hexadecimales
+                de esta manera: <code>#4ac1d2</code>, son dos dígitos para R, dos para G y dos para B</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Manejo de Colores</strong></h2>
+            </div>
+            <div class="column">
+              <h3><strong>hsl: Hue Saturation Lightness</strong></h3>
+              <p>Es otra función el CSS que recibe otros parámetros.</p>
+              <p>Hue: Es el grado de 0 a 360 del círculo de colores. 0 es rojo, 120 es verde y 240 es azul<br>
+                Saturation: es el porcentaje de saturación en una escala de grises, 0% es gris y 100% es el color puro
+                <br>
+                Lightness: es el porcentaje de brillo, 0% es negro total, 100% es blanco y 50% es el color puro
+              </p>
+              <p>Ejemplo: <code>hsl(240, 100%, 50%)</code> - azul</p>
+              <p><a target="_blank" href="https://www.w3schools.com/colors/colors_hsl.asp">hsl Calculator</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Color del contenido</strong></h2>
+            </div>
+            <div class="column">
+              <p>La propiedad CSS que modifica el color del contenido, es decir, de los texto es <code
+                  style="color: rebeccapurple">color</code></p>
+              <p>La palabra clave <code>currentcolor</code> que toma el valor de la propiedad <code>color</code> y puede
+                ser utilizada en otras propiedades.</p>
+              <a class="link" target="_blank" href="https://www.google.com">Enlace</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Color del fondo</strong></h2>
+            </div>
+            <div class="column">
+              <p>La propiedad CSS que modifica el color del fondo de un elemento es <code
+                  style="background-color: rebeccapurple; color: white;">background-color</code></p>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Manejo de fuente</strong></h2>
+            </div>
+            <div class="column">
+              <p>La propiedad <code>font</code> es una abreviación de muchas propiedades que modifican la fuente de
+                texto.<br></p>
+              <p><code>font-size</code> (obligatorio): Define la altura del texto.<br>
+                <code>font-style</code>: Define si el texto debe ser <span style="font-style: normal;">normal</span>,
+                <span style="font-style: italic;">italic</span>, <span style="font-style: oblique;">oblique</span> según
+                la familia de fuente
+                <br>
+                <code>font-weight</code>: Define el grosor de los trazos del texto, según la familia fuente; como
+                normal, <span style="font-weight: bold;">bold</span>.<br>
+                <code>font-stretch</code>: Define el grado de anchos y separaciones entre letras del texto, como
+                normal, <span style="font-stretch: condensed;">condensed</span> o <span
+                  style="font-stretch: expanded;">expanded</span><br>
+                <code>line-height</code>: Define la altura de las lineas de un text, es decir, la separación entre
+                ellas<br>
+                <code>font-family</code> (obligatorio): Define la familia de la fuente. Un buen repositorio de fuentes
+                es <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Bordes</strong></h2>
+            </div>
+            <div class="column">
+              <p>Los bordes de los elementos están definidos por la propiedad <code>border</code>.</p>
+              <p><code>border</code> es una abreviación de:<br>
+                <code>border-color</code>: El color del borde<br>
+                <code>border-style</code>: El estilo del border, que puede ser: dotted, dashed, solid, double, etc<br>
+                <code>border-color</code>: Define el color del borde<br>
+                Cada una de las propiedades mencionadas son a su vez abreviaciones de las propiedades correspondiendes
+                a top, right, bottom y left.
+              </p>
+              <p><code>border-radius</code>: Modifica las esquinas de un elemento de forma redondeada. Es una
+                abreviación de top-left, top-right, bottom-right, bottom-left.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aligntop">
+        <div class="wrap">
+          <div class="grid sm">
+            <div class="title column">
+              <h2><strong>Quiz</strong></h2>
+            </div>
+            <div class="column">
+              <p><a target="_blank" href="https://forms.gle/WPevRck73fhoGeE37">https://forms.gle/WPevRck73fhoGeE37</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-black-blue aligncenter">
+        <div class="wrap">
+          <h2><strong>Preguntas</strong></h2>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
 </html>
